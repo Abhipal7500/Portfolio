@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9c63d9f13d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+               
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Developer</p>
+                <h1>Hi,I'm <span>Abhishek</span><br> Pal from India</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm Abhishek Pal, 
+                        a versatile developer proficient in <b style="color: aliceblue;">Python, C, and C++</b>, with a strong command of web technologies including <b style="color: aliceblue;">HTML, CSS, JavaScript, React.js, Express.js, Node.js, Bootstrap, and Material-UI.</b> I have extensive experience in database management with <b style="color: aliceblue;">MySQL</b> and  <b style="color: aliceblue;">MongoDB</b>, and I'm adept at utilizing <b style="color: aliceblue;">AWS</b> for cloud services. I work seamlessly across Windows and Ubuntu environments and am skilled in using tools like VS Code, MS Excel, and PowerPoint. With expertise in system design, I create robust, scalable, and maintainable software solutions. Let's collaborate to bring innovative projects to life!
+                    
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Achievements</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Courses')">Key Courses</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>C, C++, Python*</li>
+                            <li><span>Web Technologies</span><br>HTML, 
+                                CSS, 
+                                JavaScript, 
+                                React.js, 
+                                Express.js, 
+                                Node.js, 
+                                Bootstrap, 
+                                Material-UI</li>
+                            <li><span>Database Management</span><br>MySQL, MongoDB</li>
+                            <li><span>Cloud and DevOps</span><br>AWS</li>
+                            <li><span>Tools and Others</span><br>VS Code, 
+                                MS Excel, 
+                                PowerPoint</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>JEE Advanced 2021</span><br>Secured among the top 1 percent among 0.25 million canditates.</li>
+                            <li><span> JEE Mains 2021</span><br>Secured among the top 1.3 percent among 0.95 million canditates.</li>
+                            <li><span> JNV Entrance Exam 2013</span><br>Obtained the National Education Fellowship schlorship for 7 year free education by securing 
+                                a position in top 80 among 8000 candidates.</li>
+                            <li><span> Unstop Talent Park</span><br> Among top 250 selected students out of 80,000 participants.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>B.Tech. in Civil Engineering</span><br>Institute: Indian Institute of Technology, Guwahati<br>
+                                CGPA: 7.56 (Current)<br>
+                                Year: 2021-Present</li>
+                            <li><span>Senior Secondary Education</span><br>Institute: JNV Dehradun (CBSE Board)<br>
+                                Percentage: 94.8%<br>
+                                Year: 2020</li>
+                            <li><span>Secondary Education</span><br>
+                                Institute: JNV Dehradun (CBSE Board)<br>
+                                Percentage: 93.2%<br>
+                                Year: 2018</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Courses">
+                        <ul>
+                            <li><span> Mathametics</span><br>Linear Algebra, Real Analysis, Advanced Calculus, Complex Analysis.</li>
+                            <li><span>Computing</span><br>Introduction to Computing, Computing Lab.</li>
+                            <li><span>Web Course</span><br>GFG:Data Structures and Algorithms, Web Development.</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------servives section-------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Servives</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Full-Stack Web Development</h2>
+                <p style="font-family: Georgia, 'Times New Roman', Times, serif;line-height: 2;">I specialize in developing responsive and dynamic web applications using HTML, CSS, JavaScript, and React.js. On the backend, I build robust services with Node.js and Express.js, implementing RESTful APIs and integrating third-party services for enhanced functionality and scalability.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-aws"></i>
+                <h2>Cloud Solutions</h2>
+                <p style="font-family: Georgia, 'Times New Roman', Times, serif;line-height: 2;">I specialize in deploying applications on AWS, utilizing its scalable and secure cloud infrastructure. Additionally, I implement CI/CD pipelines to automate software delivery and ensure efficient development workflows.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Database Management</h2>
+                <p style="font-family: Georgia, 'Times New Roman', Times, serif;line-height: 2;">I specialize in designing and managing MySQL and MongoDB databases, optimizing queries for performance, ensuring data integrity and security, and setting up and maintaining database servers to deliver scalable and secure solutions.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.jpg">
+                <div class="layer">
+                    <h3>Weather Website</h3>
+                    <p style="line-height: 2;">Real-time weather updates made simple with React.js and API magic.</p>
+                    <a target="_blank" href="https://abhipal7500.github.io/Weather-Website/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Code Editor</h3>
+                    <p style="line-height: 2;">Unleash your code creativity with precision and ease in every keystroke.</p>
+                    <a target="_blank" href="https://abhipal7500.github.io/Code-Editor/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online shopping App </h3>
+                    <p>The app connect you to outside  world</p>
+                    <a target="_blank" href="https://abhipal7500.github.io/Ecommerce-Front/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!-- -----------contact form=--------- -->
+<div class="contact" id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact me</h1>
+              <p><i class="fas fa-paper-plane"></i>abhipal7500@gmail.com</p>
+              <p><i class="fas fa-phone-square-alt"></i>7302476050</p>
+              <div class="social-icons">
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/abhishek-pal-33182a235/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/abhishek_pal7500/"><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-linkdin"></i></a>
+              </div>
+              <a href="images/my-cv.pdf" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                 <form name="submit-to-google-sheet">
+
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" row="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                 </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright to abhishek pal</p>
+
+    </div>
+</div>
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu")
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzfmjS4f4szkEfZnQrhN67kxTZfiP0cqOVxvBfT_LyKfE8wMKEmV3eXeDWyASnH2dWV/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+         <script>
+            // Function to check if an element is in viewport
+            function isInViewport(element) {
+                const rect = element.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            }
+    
+            // Add event listener for scrolling
+            window.addEventListener('scroll', function() {
+                const aboutSection = document.getElementById('about');
+                const subTitle = document.querySelector('.sub-title');
+                const aboutCols = document.querySelectorAll('.about-col-1, .about-col-2');
+    
+                if (isInViewport(aboutSection)) {
+                    aboutSection.classList.add('in-view');
+                    subTitle.classList.add('in-view');
+                    aboutCols.forEach(col => {
+                        col.classList.add('in-view');
+                    });
+                }
+            });
+        </script>
+</body>
+</html>
