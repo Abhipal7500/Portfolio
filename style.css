@@ -239,7 +239,6 @@ nav ul li a:hover::after {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-  
     text-align: center;
     font-size:14px;
     transition: height 0.5s;
