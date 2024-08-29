@@ -106,7 +106,7 @@ nav ul li a:hover::after {
 .row{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+   
 }
 .about-col-1{
     flex-basis: 35%;
